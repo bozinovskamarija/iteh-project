@@ -1,0 +1,309 @@
+/*CSS file*/
+
+header{
+	background: #339966;
+	height: 70px;
+	color:#fff;
+}
+a{text-decoration: none;color: #fff;}
+header p{padding-top:20px;}/*
+footer{
+	background: #339966;
+	height: 100px;
+	color:#fff;
+}
+footer p{padding-top:50px;}*/
+.image{
+	padding-top:10%;
+	height: 453px;
+}
+.intro{
+	margin:150px 0px 150px 70px;
+}
+.question{height: 342px;}
+.result-logo{margin-left: 42%;margin-top:1.6%;}
+.result-logo1{margin-left: 55%;}
+.result-container{margin-left: 40%;margin-top:1%; color:#684B68;}
+.logout{padding-top:100px;}
+.next{margin-left:200px;}
+.answer{color:green;font-weight: 300;font-size: larger; }
+.result{height: 452px;}
+
+
+
+
+
+
+/*gore je dodato*/
+input{
+    width: 100%;
+	margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+
+}
+
+.frst{
+	border-radius: 8px 8px 0 0;
+
+	
+}
+.bottom{
+	font-size: 14px;
+	color: #606060;}
+
+	
+body {
+  
+  display: flex;
+  
+}
+
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color: #333333;
+    /*font-weight: bold;*/
+}
+a:active {
+    text-decoration: none;
+}
+/*
+#firstsprof{
+	border-radius: 8px 8px 0 0;
+}
+#secondprof{
+	border-radius: 0px 0px 8px 8px;
+
+}*/
+/*ne radi :/*/
+
+#headtop{
+    
+    display: block;
+    float: right;  
+    z-index: 3;
+    position: absolute; 
+    right: 5px; 
+    top: 5px;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.inner_container{
+	padding: 20px;
+	width:450px;
+	margin:0 auto;
+    box-shadow: 8px 8px 40px 1px #c2c2d6;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.btn, .btn-success, .btn-block{
+	background-color: #EF4D4B;
+	font-size:16px;
+	border: none;
+}
+.btn:hover, .btn-success:hover, .btn-block:hover{
+	background-color: #F77C77;
+}
+.login_button, .sign_up_btn, #dugme {
+    background-color: #F77C77;
+    color: white;
+	margin-top:10px;
+	margin-bottom:10px;
+    padding:8px;
+    width: 100%;
+	font-size:16px;
+	font-weight: bold;
+	border-radius: 6px;
+}
+.login_button:hover,
+.sign_up_btn:hover,
+#dugme:hover {
+    background-color: #EF4D4B; 
+ }
+.register_btn{
+	background-color: #206040;
+    color: white;
+	margin-top:10px;
+	margin-bottom:15px;
+	padding:8px;
+    width: 100%;
+	font-size:16px;
+	font-weight: bold;
+	border-radius: 6px;
+}
+.back_btn{
+	margin-top:10px;
+	color: white;
+	margin-bottom:15px;
+    padding: 10px;
+    background-color: #e67e22;
+}
+.logout_button{
+	background-color: #EE7701;
+    color: white;
+	margin-top:10px;
+    padding:10px;
+    width: 100%;
+	font-size:16px;
+	font-weight: bold;
+	border-radius: 6px;
+
+}
+
+
+h2{
+/*	color: #EE7701;*/
+	color: #fff;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+html, body {
+  width: 100%;
+  height: 100%;
+}
+*/
+body {
+  
+ 	font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  /*padding: 30px;*/
+}/*
+form#firstprof{
+	margin-top: 20px;
+}*/
+form {
+
+  background: #fff;
+  margin: auto;
+  padding: 30px;/*
+  width: 100%;
+  min-width: 320px;
+  max-width: 540px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  */
+}
+
+h1 {
+  color: #fff;
+}
+
+group + group {
+  margin-top: 20px;
+}
+
+.inline-radio {
+	display:inline;
+  border-radius: 0 0 8px 8px;
+	overflow: hidden;
+  border: 1px solid #b6b6b6;
+}
+#radio label {
+    float: left;
+    display: inline
+}
+radio {
+    display: inline;
+}
+#radio input {
+	display: inline;
+    width: auto;
+    margin-left: 3em;
+}
+div{
+	position: relative;
+	
+}
+div.inner_container {
+	flex: 1;
+	
+	}
+
+.delete_button{
+	background: none;
+	color:inherit;
+	border: none;
+	font:inherit;
+	margin: 0px;
+	text-decoration: none;
+ 	cursor: pointer;
+	padding: 0;
+}
+.delete_button:hover{
+	color: #333333;
+    font-weight: bold;
+}
+	/*
+	input [type="checkbox"]{
+		width: 13px;
+		height: 13px;
+		padding: 0;
+		margin:0;
+  		vertical-align: bottom;
+  		position: relative;
+  		top: -1px;
+  		*overflow: hidden;
+	}*/
+input[type="text"], input[type="password"], input[type="email"] {
+    font-size:16px;
+}
+ input {
+  text-align: center;
+}/*
+	input[type="radio"], label {
+    width: 100%;
+	vertical-align: baseline;
+	opacity: 0%;
+	
+   	}
+input[type="radio"]{
+    vertical-align: baseline;
+}
+input[type=radio] {
+  vertical-align: -2px;
+  position: relative;
+  bottom: 2px;
+}*/
+
+	label {
+		position: absolute;
+		top: 0; left: 0;
+		color: #b6b6b6;
+
+		width: 100%;
+
+
+		height: 100%;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none;
+*/
+	}
+
+	div:last-child label {
+		border-right: 0;
+	}
+
+	input:checked + label {
+		background: #858585;
+    	font-weight: 300;
+		color: #fff;
+		text-shadow: 0.1px 0.3px #fff;
+	}
+}

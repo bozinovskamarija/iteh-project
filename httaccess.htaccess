@@ -1,0 +1,16 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^book/list/$   RestController.php?page_key=list [nc,qsa]
+RewriteRule ^book/list$   RestController.php?page_key=list [nc,qsa]
+
+RewriteRule ^book/create/$   RestController.php?page_key=create [L]
+RewriteRule ^book/create$   book/create/ [L,R=301]
+
+RewriteRule ^book/delete/([0-9]+)/$   RestController.php?page_key=delete&id=$1 [L]
+RewriteRule ^book/delete([0-9]+)$   book/delete/$1 [L,R=301]
+
+RewriteRule ^book/update/([0-9]+)/$   RestController.php?page_key=update&id=$1 [L]
+RewriteRule ^book/update/([0-9]+)$   book/update/$1/ [L,R=301]

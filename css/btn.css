@@ -1,0 +1,52 @@
+/* Load FontAwesome to create a pure CSS checkbox */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
+.mktoRadioList input {
+    opacity: 0;
+    position: absolute;   
+}
+ 
+.mktoRadioList input, .mktoRadioList label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+ 
+.mktoRadioList label {
+    position: relative;
+}
+/* Edit the properties below to change the colors of the un-checked radio button */
+.mktoRadioList input + label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    line-height:15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+ 
+.mktoRadioList input + label:before {
+    border-radius: 50%;
+}
+/* Edit the properties below to change the colors of the checked radio button */
+.mktoRadioList input:checked + label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+ 
+.mktoRadioList input:focus + label {
+  outline: 1px solid #ddd; /* focus style */
+}
+ 
+ 
+body .mktoForm .mktoRadioList > label {
+	margin-left:0;
+}
